@@ -43,9 +43,9 @@ from tqdm import tqdm
 ## How to run
 
 ```python
-csv_file = "AFH.csv"
-db_name = "effort.db"
-table_name = "afh"
+csv_file = "data1.csv"
+db_name = "data1.db"
+table_name = "datatable1"
 
 import_csv_to_sqlite(csv_file, db_name, table_name)
 ```
