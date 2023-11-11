@@ -25,7 +25,7 @@ Convert CSV files to SQLite
 # Requirements
 
 ```bash
-pip install requests textblob
+pip install tqdm
 ```
 
 or
@@ -35,16 +35,17 @@ pip install -r requirements.txt
 ```
 
 ```python
-import requests
 import sqlite3
-from textblob import TextBlob
+import csv
+from tqdm import tqdm
 ```
 
 ## How to run
 
 ```python
-API_KEY = 'Your API key here'
-BASE_URL = 'https://newsapi.org/v2/top-headlines'
+csv_file = "AFH.csv"
+db_name = "effort.db"
+table_name = "afh"
 
-get_news(API_KEY)
+import_csv_to_sqlite(csv_file, db_name, table_name)
 ```
